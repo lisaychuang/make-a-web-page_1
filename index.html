@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>Lisa's HTML & CSS notes</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!DOCTYPE HTML>
+<html lang="en">
+<!-- This is the HEADER section, dictating the name of this webpage -->
+
+<head>
+  <meta charset="utf-8" />
+  <title> Lisa's Udacity Nanodegree - Intro to Programming Notes </title>
+</head>
+<!-- This is the BODY section, dictating the content of this webpage. Let's start with Session 0 Notes -->
+
+<body>
+  <!-- This is the TABLE OF CONTENT section -->
+  <div class="TOC" id="TOCtitle">
+    <h1>Table of Contents</h1>
+  </div>
+  <div class="TOC" id="TOC">
+    <div class="session0">
+      <a href="#Zero">The Web and Basic HTML</a>
+      <!-- this is for Session 0 -->
+      <ol type="i">
+        <li><a href="#Zero-i">Basics of the Web</a>
+          <!-- session 0, part 1 -->
+        </li>
+        <li><a href="#Zero-ii">Computers are stupid</a>
+          <!-- session 0, part 2 -->
+        </li>
+        <li><a href="#Zero-iii">HTML Markup</a>
+          <!-- session 0, part 3 -->
+        </li>
+        <li><a href="#Zero-iv">Basic HTML Tags</a>
+          <!-- session 0, part 4 -->
+        </li>
+        <li><a href="#Zero-v">HTML attributes</a>
+          <!-- session 0, part 5 -->
+        </li>
+        <li><a href="#Zero-vi">White spaces: in-line v.s. blocks</a>
+          <!-- session 0, part 6 -->
+        </li>
+        <li><a href="#Zero-vii">Container Elements: Span & Div</a>
+          <!-- session 0, part 7 -->
+        </li>
+        <li><a href="#Zero-viii">HTML Documents</a>
+          <!-- session 0, part 8 -->
+        </li>
+      </ol>
+    </div>
+    <div class="session1">
+      <a href="#One">HTML, CSS, Editors and Structure</a>
+      <!-- this is for session 1 -->
+      <ol type="i">
+        <li><a href="#One-i">Creating Structured Documents</a>
+          <!-- session 1, part 1 -->
+        </li>
+        <li><a href="#One-ii">Using Google Chrome Developer Tools</a>
+          <!-- session 1, part 2 -->
+        </li>
+        <li><a href="#One-iii">Document Object Model (DOM)</a>
+          <!-- session 1, part 3 -->
+        </li>
+        <li><a href="#One-iv">CSS Styling Summary</a>
+          <!-- session 1, part 4 -->
+        </li>
+        <li><a href="#One-v">Using HTML to "Boxify"</a>
+          <!-- session 1, part 5 -->
+        </li>
+        <li><a href="#One-vi">Box Sizing</a>
+          <!-- session 1, part 6 -->
+        </li>
+        <li><a href="#One-vii">Box Positioning</a>
+          <!-- session 1, part 7 -->
+        </li>
+        <li><a href="#One-viii">Code, Test, Refine</a>
+          <!-- session 1, part 8 -->
+        </li>
+        <li><a href="#One-ix">Other Notes</a>
+          <!-- session 1, part 9 -->
+        </li>
+      </ol>
+    </div>
+  </div>
+  <!-- This is the Session-Concept section. Let's start with Session 0: The Web and Basic HTML Notes -->
+  <div class="session">
+    <h1>Session 0: The Web and Basic HTML</h1>
+    <div class="concept" id="Zero">
+
+      <!-- session 0, part 1 -->
+      <div class="concept-title" id="Zero-i">
+        <h2>Basics of the Web </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>The World Wide Web (WWW) is a collection of HTML documents:</p>
+        <p>HTML = HyperText Markup Language, used to tell computers what to do / display on webpages. HTML codes documents, which form the heart of the web:</p>
+        <ul>
+          <li>Text Content = what you see
+            <br>
+            <li>Mark Up = look of content/ arrangement, can be stylized using CSS)
+              <br>
+              <li>Reference to other documents (e.g. images, videos)
+                <br>
+                <li>Links to other pages using Hyperlinks
+                  <br>
+                  <span class="italic"> * Hyperlinks were invented in 1990s.</span></ul>
+        <p>In another word, coding is when programmers (or you!) write text in instructional language that the computer understands.</p>
+        <p>On our computer, we use web browsers (e.g. Chrome, IE) to make request to servers - a collection of computers sitting in a room storing files and data, using HTTP. HTTP are the protocols browsers used to communicate with servers.</p>
+      </div>
+
+      <!-- session 0, part 2 -->
+      <div class="concept-title" id="Zero-ii">
+        <h2>Computers are stupid </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>Computers are sensitive to typos, and small mistakes such as missing an End Tag will affect the page layout! Developers must then "debug" to track and correct their mistakes.
+          <img src="http://activerain.trulia.com/image_store/uploads/5/0/8/9/4/ar124010930549805.jpg" alt="Computers are sentitive to typo"></p>
+      </div>
+
+      <!-- session 0, part 3 -->
+      <div class="concept-title" id="Zero-iii">
+        <h2>HTML Markup </h2>
+      </div>
+      <div class="concept-description">
+
+        <p> Markups are made up of <span class="italic">"Tags"</span>, which looks like this:
+          <br>
+          <span class="bold"> &lt; Tag &gt; Contents &lt;/ Tag &gt; </span></p>
+
+        <p> First tag = Opening Tag, which gives instruction to how the content should be arranged.
+          <br> After the content, we will add a Closing tag, to signal the end of the instruction (eg end of Bold/Italic)
+          <br> This structure is referred to as a HTML Element.</p>
+      </div>
+
+      <!-- session 0, part 4 -->
+      <div class="concept-title" id="Zero-iv">
+        <h2>Basic HTML Tags </h2>
+      </div>
+      <div class="concept-description">
+
+        <p> We can <span class="bold"> BOLD </span> text using &lt; b &gt;
+          <br> We can <span class="italic"> Italicize </span> text using &lt; em &gt;</p>
+        <p>Here's a list of common HTML tags:
+          <img src="http://www.webdesignmash.com/trial/wp-content/uploads/2013/04/HTML-Tags.jpg" alt="Common HTML tags"></p>
+      </div>
+
+      <!-- session 0, part 5-->
+      <div class="concept-title" id="Zero-v">
+        <h2>HTML Attributess </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>An attribute is a property of an HTML element. It looks like this:
+          <br>
+          <span class="bold">   &lt; TagName ATTR = "value" &gt; Contents &lt; /TagName &gt; </span></p>
+
+        <p>An example of an attribute is the ANCHOR = &lt; a &gt; tag.
+          <br> To create a link to an external page, use: </p>
+        <p> <span class="bold"> &lt; a href = "link" &gt; </span>: href = attribute name , and the link = URL to link to. </p>
+        <p>We can <a href="http://learn-2-code.appspot.com/code_pen_examples/"> Create a link to Andy's Codepen examples </a> using this tag.</p>
+        <p><span class="bold"> &lt; img src = "link" alt = "text" &gt; </span>: img = images , src = source, link = URL to source image from, alt = alternative display, text = alternative text shown when image doesn't load, which is useful for broken request
+          and blind people! :) </p>
+        <span class="italic"> NB: These tags are all inline elements</span>
+      </div>
+
+      <!-- session 0, part 6 -->
+      <div class="concept-title" id="Zero-vi">
+        <h2>White spaces: in-line v.s. blocks </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>When coding a web document using HTML, it ignores white spaces (eg tab, multiple spaces etc). Useful HTML tags to create line breaks are:</p>
+        <p><span class="bold">&lt; br &gt; </span>: single inline break, which ends a line and wrap to the next line. It is a "void" tag which doesn't require a closing tag &lt; &#47;br &gt;
+          <br>
+          <span class="bold">&lt; p &gt; </span>: Whereas the P tag Creates a block paragraph, creating an invisible box around the text... it can have height & width. P tag will also require a closing tag.</p>
+      </div>
+
+      <!-- session 0, part 7 -->
+      <div class="concept-title" id="Zero-vii">
+        <h2>Container Elements: Span & Div </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>Both these elements contain content, and can have style attached to them via CSS to change the way the text will look/ their layout in the document.
+          <br>
+          <span class="bold">&lt; span &gt; </span>: <span>This is what a SPAN line looks like </span>
+          <br>
+          <span class="italic">* SPAN creates an inline break, similar to the BR tag </span>
+          <br>
+          <span class="bold">&lt; div &gt; </span>:
+          <div>This is what a DIV line looks like</div>
+          <br>
+          <span class="italic">* DIV creates another block, similar to the P tag for paragraph text.</span>
+      </div>
+
+      <!-- session 0, part 8 -->
+      <div class="concept-title" id="Zero-viii">
+        <h2>HTML Documents </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>A complete HTML document has a DOC type, opening & closing HTML tag, the HEAD (includes title of the document, meta data / CSS / Javascript), and Body Tag = which includes most of the content in the document.
+          <br> In the Nanodegree course, we will be focusing on the BODY tags to generate content of a HTML document.</p>
+      </div>
+    </div>
+    <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TOCtitle">Back to Table of Contents</a></span></span>
+    </div>
+  </div>
+
+
+  <!-- Next up: Session 1: HTML, CSS, Editors and Structure Notes -->
+  <div class="session">
+    <h1>Session 1: HTML, CSS, Editors and Structure</h1>
+    <div class="concept" id="One">
+
+      <!-- session 1, part 1 -->
+      <div class="concept-title" id="One-i">
+        <h2>Creating Structured Documents </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>HTML, CSS, Javascript : 3 langugages serving different purposes when developing a webpage.</p>
+
+        <p>Using the analogy of a house...
+          <br>
+          <ul>
+            <li><span class="bold">HTML</span>: HyperText Markup Language = the standard markup language used to create web pages. HTML creates structure in a webpage (think layout of a house)
+              <br>
+              <li><span class="bold">CSS</span>: Cascading Style Sheets = language used for describing the look and formatting of a webpage. CSS creates style in a webpage, such as font size, colours, thickness of borders etc (think decoration within the
+                house)
+                <br>
+                <li><span class="bold">Javascript</span> = language used to create interactive components in a webpage (think of remotes or garage doors needed to perform actions)</ul>
+      </div>
+
+      <!-- session 1, part 2 -->
+      <div class="concept-title" id="One-ii">
+        <h2>Using Google Chrome Developer Tools </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>Click on Google Chrome hamburger sign > Tools > Developer's Tools, a box opens up on the bottom panel. </p>
+        <p>On review, you can see that :
+          <br>
+          <ul>
+            <li>All HTML elements are rectangular
+              <br>
+              <li> By going deep enough into the code, you can read the same text as on the webpage.
+                <p>HTML builds a Tree-like structure for the webpage. This is how HTML classifies page content, telling the browser which part is text/ image / link etc. </p>
+              </li>
+          </ul>
+      </div>
+
+      <!-- session 1, part 3 -->
+      <div class="concept-title" id="One-iii">
+        <h2>Document Object Model (DOM) </h2>
+      </div>
+      <div class="concept-description">
+
+        <p><span class="bold">Document Object Model</span>: a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages). The nodes of every document are organized in a tree structure,
+          called the DOM tree.</p>
+
+        <p>When programmers talk about the <span class="bold"> DOM</span>, they are talking about the tree-like structure of a webpage.
+          <br> DOM converts an HTML tag into an element that the browser uses to create a page.</p>
+      </div>
+
+      <!-- session 1, part 4 -->
+      <div class="concept-title" id="One-iv">
+        <h2>CSS Styling Summary </h2>
+      </div>
+      <div class="concept-description">
+
+        <p>CSS is code written to define the "style" of HTML elements in a webpage.
+          <br> A great resource to learn new CSS properties is: <span class="bold"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla CSS reference page</a></span></p>
+        <p> Use CSS Class selector to define style of classes, which in turn changes the styling of corresponding HTML elements.</p>
+        <p>It is also crucial to <span class="bold"> avoid repetition </span> in your HTML structure. When you repeat codes over and over, you are more likely to make errors - remember, computers are stupid and a small typo will affect your code!. By avoiding
+          repetition, you can saves time when it comes to DeBugging! In addition, an organized structure (e.g. using DIV and SPAN class attribution) will enable you to apply style to HTML element with a single CSS line.
+          <br> This is why you should build up the habits to apply <span class="bold">Procedural Thinking </span> as you learning to code, and avoid repetition!
+      </div>
+
+      <!-- session 1, part 5 -->
+      <div class="concept-title" id="One-v">
+        <h2>Using HTML to "Boxify"</h2>
+      </div>
+      <div class="concept-description">
+
+        <p>Everything on a webpage is organized in "Boxes" - or rectangular sections. This gives developers the flexibility to rearrange content easily on a webpage, and helps them "Boxify, or break down a given graphic design into various boxes. </p>
+        <p>When coding a webpage, you can build the structure of the page using <span class="bold">Div and Span</span> elements. Use DIV to boxify a section, and use SPAN to add style to in-line elements.
+          <br> Within each element, you can include <span class="bold">Class Attributes</span> to help you label each box.</p>
+      </div>
+
+      <!-- session 1, part 6 -->
+      <div class="concept-title" id="One-vi">
+        <h2>Box Sizing</h2>
+      </div>
+      <div class="concept-description">
+
+        <p>Carrying on from previous point, each HTML "box" has 4 elements: margin, border, padding, content. Refer to <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/box-model.html">this demo page </a> for more details.</p>
+        <p> With 4 components to each box, it can often be hard to get the accurate size of a box. Use two techniques to deal with sizes:
+          <br>
+          <ol>
+            <li>Set sizes in terms of percentages rather than pixels.
+              <li>Set the box-sizing attribute to border-box for every element.</ol>
+          <p>Use this CSS code to ensure your box sizing is displayed accurately in all browsers (Safari, Mozilla, Microsoft IE) </p>
+          <p><span class="bold">
+  * {<br>
+    -webkit-box-sizing: border-box;<br>
+    -moz-box-sizing: border-box;<br>
+    -ms-box-sizing: border-box;<br>
+    box-sizing: border-box;<br>
+  } </span></p>
+      </div>
+
+      <!-- session 1, part 7 -->
+      <div class="concept-title" id="One-vii">
+        <h2>Box Positioning</h2>
+      </div>
+      <div class="concept-description">
+        <p>As Divs are block elements, they take up the entire width of a page. Adding the CSS rule:
+          <br>
+          <span class="bold">display: flex; </span>
+          <br> to override this behavior and let divs appear next to each other. </p>
+        <p>You can read more about <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexible Boxes here.</a>
+      </div>
+
+      <!-- session 1, part 8 -->
+      <div class="concept-title" id="One-viii">
+        <h2>Code, Test, Refine</h2>
+      </div>
+      <div class="concept-description">
+        <p>Here are steps to CODE your webpage:
+          <br>
+          <ol>
+            <li><span class="bold">Look for natural boxes:</span> Build structure of the webpage by visually boxifying the given design
+              <li><span class="bold">Look for repeated styles & semantic elements:</span> Write your HTML, and add relevant headings
+                <li><span class="bold">Apply CSS styles:</span> Consider box sizing and positioning. Go from BIG to SMALL.
+                  <li><span class="bold">Polish finer details:</span> fix HTML & CSS as needed.</ol>
+          <p> Remember you can always use the <span class="bold">Developer Tool</span> function to test HTML & CSS with instant feedback on the webpage, before you change your code on source file.</p>
+      </div>
+
+      <!-- session 1, part 9 -->
+      <div class="concept-title" id="One-ix">
+        <h2>Other Notes</h2>
+      </div>
+      <div class="concept-description">
+        <p>To ensure the body element / content of your webpage changes as size of browser changes, you can define div element with:
+          <br>
+          <span class="bold">width: 75%</span>
+          <br> This ensures the width of the content of the page is always shown at 75% of the browser screen width.</p>
+        <p>Remember to review your HTML code, to ensure sound structure is in place - differentiating between DIV and SPAN tags, for example.
+      </div>
+    </div>
+    <div class="ReferTOC">
+      <span class="bold"><span class="underline"><a href="#TOCtitle">Back to Table of Contents</a></span></span>
+    </div>
+  </div>
+</body>
+    
+    
+    
+    
+    
+  </body>
+</html>

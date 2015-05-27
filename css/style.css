@@ -1,0 +1,122 @@
+body {
+  padding: 20px 10px;
+  font-family: Helvetica;
+  max-width: 2000px;
+  width: 95%;
+  margin: 0 auto;
+}
+/* Styling for webpage body */
+
+.TOC {
+  display: flex;
+  background-color: #fff277;
+  font-family: Palatino Linotype;
+  max-width: 2000px;
+  width: 90%;
+  border-style: solid;
+  border-width: medium;
+  border-radius: 12px;
+  border-color: #66cdaa;
+  padding: 15px;
+  margin: 35px;
+}
+
+.Zero {
+  padding: 10px;
+}
+
+.One {
+  padding: 10px;
+}
+/* Styling for Table of Contents */
+
+h1 {
+  text-align: center;
+  color: #294860;
+}
+
+h2 {
+  text-align: center;
+  color: #294860;
+}
+/* Styling for Title Headings */
+
+.session {
+  background-color: #66cdaa;
+  font-family: Palatino Linotype;
+  border-radius: 50px;
+  color: #e9fffb;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.concept {
+  background-color: #fff277;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  color: #142030;
+}
+
+.concept-title {
+  margin: 5px;
+  color: #6f6d6d;
+  font-family: Tahoma;
+  text-align: center;
+}
+
+.concept-description {
+  margin: 5px;
+  padding: 5px;
+  color: #142030;
+  font-family: Tahoma;
+  text-align: left;
+  border: 8px dotted #b4eeb4;
+  border-top-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+}
+/* Styling for session notes */
+
+img {
+  padding: 10px 5px;
+  max-width: 2000px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.ReferTOC {
+  text-align: right;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #294860;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* Styling for in-line elements, such as images, paragraphs & lists */
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+  font-size: 120%;
+}
+/* This is the CSS styling for span in-line elements */
